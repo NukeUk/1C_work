@@ -1,0 +1,14 @@
+﻿ConfigDumpInfo.xml-->ConfigDumpInfo.xml
+Configuration.xml-->Configuration.xml
+AccumulationRegisters\ДвижениеТоваров.xml-->AccumulationRegisters\ДвижениеТоваров.xml
+Catalogs\Контрагенты.xml-->Catalogs\Контрагенты.xml
+Catalogs\Товары.xml-->Catalogs\Товары.xml
+CommonForms\Форма.xml-->CommonForms\Форма.xml
+CommonForms\Форма\Ext\Form.xml-->CommonForms\Форма\Ext\Form.xml
+CommonForms\Форма\Ext\Form\Module.bsl-->CommonForms\Форма\Ext\Form\Module.bsl
+CommonModules\ОбщийМодуль1.xml-->CommonModules\ОбщийМодуль1.xml
+CommonModules\ОбщийМодуль1\Ext\Module.bsl-->CommonModules\ОбщийМодуль1\Ext\Module.bsl
+Documents\ПоступлениеТоваров.xml-->Documents\ПоступлениеТоваров.xml
+Documents\ПоступлениеТоваров\Ext\ObjectModule.bsl-->Documents\ПоступлениеТоваров\Ext\ObjectModule.bsl
+Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
+Languages\Русский.xml-->Languages\Русский.xml
