@@ -14,7 +14,7 @@
 		<Metadata name="CommonModule.ОбщийМодуль1.Module" id="01a36aa4-f20f-40bc-a70c-c3cbb7293d92.0" configVersion="544bc9463faf974cac046af4d879c6fc00000000"/>
 		<Metadata name="Configuration.Конфигурация" id="083dd360-5738-4bc7-9eaf-7b6326dcb852" configVersion="b5be59786d0aae46a76659b4c225399000000000"/>
 		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="e32c1e74-409e-4a8c-aa8b-481e1620bf9f.8" configVersion="27e17949f438364b92125bdecec60ce600000000"/>
-		<Metadata name="Document.ПоступлениеТоваров" id="50e5f79b-075c-4e2a-ae79-1874c6cac212" configVersion="aebe007b2bd2a241a7f3d7ff2086053a00000000">
+		<Metadata name="Document.ПоступлениеТоваров" id="50e5f79b-075c-4e2a-ae79-1874c6cac212" configVersion="806390dfa7793f4d80b8c5613a010a3700000000">
 			<Metadata name="Document.ПоступлениеТоваров.TabularSection.Товары.Attribute.Номенклатура" id="574eb912-afbc-428d-8cb7-e4179ca908aa"/>
 			<Metadata name="Document.ПоступлениеТоваров.Attribute.Контрагент" id="68dcbcde-a24b-4b01-afeb-f5813bf90a68"/>
 			<Metadata name="Document.ПоступлениеТоваров.TabularSection.Товары" id="a0e82ef9-43f2-4e9f-be29-b4cce4acb7a9"/>
