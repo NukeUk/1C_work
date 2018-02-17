@@ -1,0 +1,36 @@
+def ConnectionString
+def versionText
+def versionValue
+
+pipeline{
+    agent{
+        label 'bdd'
+    }
+    environment{
+        Storage = credentials('storage_trade_nikeuk')
+    }
+    stages{
+        stage('Обновление тестового контура'){
+            steps{
+                timestamps{
+                    script{
+                        ConnectionString = "\"/F${env.database1C}\""
+                        versionText = readFile encoding: 'UTF-8', file: 'src/cf/VERSION'
+                        versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
+                    }
+                    cmd("deployka loadrepo ${ConnectionString} \"${env.storagePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -storage-ver ${versionValue}")
+                    cmd("deployka dbupdate ${ConnectionString} -allow-warnings")
+                }
+            }
+        }
+    }
+}
+
+def cmd(command){
+    if (isunix){
+        sh "${command}"
+    } else
+    {
+        bat "chcp 65001\n${command}"
+    }
+}
