@@ -1,0 +1,5 @@
+deployka loadrepo "/FC:\Users\088\Documents\tradeTest" "C:/WorkSpace/Storage/Trade" -storage-user NikeUk -storage-pwd 123
+
+deployka dbupdate "/FC:\Users\088\Documents\tradeTest" -allow-warnings
+
+sc create "1C:Enterprise RAS" binpath="\"C:\Program Files (x86)\1cv8\8.3.10.2699\bin\ras.exe\" cluster --service --port=1545 srvhp73:1540"
