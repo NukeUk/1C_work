@@ -10,7 +10,7 @@ pipeline{
         Storage = credentials('storage_trade_nikeuk')
     }
     stages{
-        stage('Обновление тестового контура'){
+        stage("Обновление тестового контура"){
             steps{
                 timestamps{
                     script{
