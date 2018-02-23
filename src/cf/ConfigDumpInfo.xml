@@ -7,7 +7,9 @@
 			<Metadata name="AccumulationRegister.ДвижениеТоваров.Resource.Сумма" id="d32f0217-af50-44c5-a9cd-e4915bc6897c"/>
 		</Metadata>
 		<Metadata name="Catalog.Контрагенты" id="9f14832d-a3a8-4906-97e2-95feb438a579" configVersion="42e4ee60a518024e86c83708c1f784ed00000000"/>
-		<Metadata name="Catalog.Товары" id="4419c972-6673-4013-92fc-1e96f8481c91" configVersion="da7a740444ad854a8c294dbfc888f44e00000000"/>
+		<Metadata name="Catalog.Товары" id="4419c972-6673-4013-92fc-1e96f8481c91" configVersion="d9a1b5bec8209b4786af16e981c034e600000000">
+			<Metadata name="Catalog.Товары.Attribute.Артикул" id="026e1706-6752-4e97-b96e-039f0aa504db"/>
+		</Metadata>
 		<Metadata name="CommonForm.Форма" id="359f3b8b-1467-40fa-83fe-2e3d8b14ffb5" configVersion="5765548f7aee544d85eec9bab6d7ac8200000000"/>
 		<Metadata name="CommonForm.Форма.Form" id="359f3b8b-1467-40fa-83fe-2e3d8b14ffb5.0" configVersion="8ab4ce9dabcbf043b670edfc5eb70cc700000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль1" id="01a36aa4-f20f-40bc-a70c-c3cbb7293d92" configVersion="03b802849edbbb479504796d22cbc87500000000"/>
