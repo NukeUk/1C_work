@@ -19,7 +19,8 @@ pipeline{
                         versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
                     }
                     echo "${ConnectionString}"
-                    cmd("deployka loadrepo ${ConnectionString} \"${env.storagePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -storage-ver ${versionValue}")
+                    //cmd("deployka loadrepo ${ConnectionString} \"${env.storagePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -storage-ver ${versionValue}")
+                    cmd("deployka loadrepo ${ConnectionString} \"${env.storagePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw}")
                     cmd("deployka dbupdate ${ConnectionString} -allow-warnings")
                 }
             }
