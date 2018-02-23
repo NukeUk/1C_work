@@ -27,7 +27,7 @@ pipeline{
 }
 
 def cmd(command){
-    if (isunix){
+    if (isUnix){
         sh "${command}"
     } else
     {
