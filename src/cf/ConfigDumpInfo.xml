@@ -6,7 +6,9 @@
 			<Metadata name="AccumulationRegister.ДвижениеТоваров.Resource.Количество" id="874c4665-cfe1-494a-b77d-8c88946263b4"/>
 			<Metadata name="AccumulationRegister.ДвижениеТоваров.Resource.Сумма" id="d32f0217-af50-44c5-a9cd-e4915bc6897c"/>
 		</Metadata>
-		<Metadata name="Catalog.Контрагенты" id="9f14832d-a3a8-4906-97e2-95feb438a579" configVersion="42e4ee60a518024e86c83708c1f784ed00000000"/>
+		<Metadata name="Catalog.Контрагенты" id="9f14832d-a3a8-4906-97e2-95feb438a579" configVersion="3920bd461599d84392693d03de2e7a8900000000">
+			<Metadata name="Catalog.Контрагенты.Attribute.ИНН" id="ed7b0902-dcb4-4268-bfc4-b589b84052c7"/>
+		</Metadata>
 		<Metadata name="Catalog.Товары" id="4419c972-6673-4013-92fc-1e96f8481c91" configVersion="d9a1b5bec8209b4786af16e981c034e600000000">
 			<Metadata name="Catalog.Товары.Attribute.Артикул" id="026e1706-6752-4e97-b96e-039f0aa504db"/>
 		</Metadata>
