@@ -1,8 +1,9 @@
 {
     "ВыполнитьСценарии": true,
+    "ЗагрузитьСценарии": true,
     "ЗавершитьРаботуСистемы": false,
     "ЗакрытьTestClientПослеЗапускаСценариев": true,
-    "КаталогФич": "$workspaceRoot/features/tradeTests/",
+    "КаталогФич": "$workspaceRoot/features",
     "КаталогиБиблиотек": [
         "./features/Librares"
     ],
