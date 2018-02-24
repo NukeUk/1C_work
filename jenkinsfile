@@ -1,6 +1,8 @@
 def ConnectionString
 def versionText
 def versionValue
+def uccode
+def locparams
 
 pipeline{
     agent{
@@ -14,7 +16,7 @@ pipeline{
             steps{
                 timestamps{
                     script{
-                        ConnectionString = "\"/F${env.database1C}\""
+                        ConnectionString = "\"/S${env.database1C}\""
                         versionText = readFile encoding: 'UTF-8', file: 'src/cf/VERSION'
                         versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
                     }

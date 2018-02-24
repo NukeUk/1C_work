@@ -2,6 +2,14 @@ deployka loadrepo "/FC:\Users\088\Documents\tradeTest" "C:/WorkSpace/Storage/Tra
 
 deployka dbupdate "/FC:\Users\088\Documents\tradeTest" -allow-warnings
 
-sc create "1C:Enterprise RAS" binpath="\"C:\Program Files (x86)\1cv8\8.3.10.2699\bin\ras.exe\" cluster --service --port=1545 srvhp73:1540de"
+sc create "1C:Enterprise RAS" binpath="\"C:\Program Files\1cv8\8.3.11.3034\bin\ras.exe\" cluster --service --port=1545 localhost:1540"
 
 vrunner vanessa --pathvanessa "C:\Repo\vanessa-behavior\vanessa-behavior.epf" --vanessasettings ./tools/VBparams.json --workspace . --ibconnection /Slocalhost\trade_dev --db-user "admin"
+
+1c8_UP.exe "C:\Program Files\1cv8\8.3.11.3034\bin\backbas.dll"
+
+deployka session lock -ras localhost:1545 -rac "C:\Program Files\1cv8\8.3.11.3034\bin\rac.exe" -db trade_dev -lockmessage "Test" -lockuccode 123 -db-user "admin" -db-pwd "123"
+
+deployka session kill -ras localhost:1545 -rac "C:\Program Files\1cv8\8.3.11.3034\bin\rac.exe" -db trade_dev -lockuccode 123 -db-user "admin" -db-pwd "123"
+
+deployka session unlock -ras localhost:1545 -rac "C:\Program Files\1cv8\8.3.11.3034\bin\rac.exe" -db trade_dev -lockuccode 123 -db-user "admin" -db-pwd "123"
