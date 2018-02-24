@@ -26,7 +26,7 @@
 		</Metadata>
 		<Metadata name="Document.ПоступлениеТоваров.ObjectModule" id="50e5f79b-075c-4e2a-ae79-1874c6cac212.0" configVersion="304cdd1cbfe2054d8211f2e7733f694300000000"/>
 		<Metadata name="Language.Русский" id="941e8caa-56af-4738-a851-d9527b2e8904" configVersion="2aa4ce98105f8947a05e1cdf8779db3c00000000"/>
-		<Metadata name="Role.Администратор" id="0b74014e-fbb6-42df-b019-77d6bfa4d1ce" configVersion="c28687312bf7854a8529915ea2b1e6f800000000"/>
-		<Metadata name="Role.Администратор.Rights" id="0b74014e-fbb6-42df-b019-77d6bfa4d1ce.0" configVersion="859176431e6837488422501986e6d1b600000000"/>
+		<Metadata name="Role.Администратор" id="0b74014e-fbb6-42df-b019-77d6bfa4d1ce" configVersion="d7e85c00669a00449f505f3264037f6f00000000"/>
+		<Metadata name="Role.Администратор.Rights" id="0b74014e-fbb6-42df-b019-77d6bfa4d1ce.0" configVersion="364ae72da7faca418bed3a906981229d00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
