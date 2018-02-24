@@ -1,3 +1,5 @@
+gitsync export C:\WorkSpace\Storage\Trade ./src/cf -v8version 8.3.11.3034
+
 deployka loadrepo "/FC:\Users\088\Documents\tradeTest" "C:/WorkSpace/Storage/Trade" -storage-user NikeUk -storage-pwd 123
 
 deployka dbupdate "/FC:\Users\088\Documents\tradeTest" -allow-warnings
@@ -6,7 +8,8 @@ sc create "1C:Enterprise RAS" binpath="\"C:\Program Files\1cv8\8.3.11.3034\bin\r
 
 vrunner vanessa --pathvanessa "C:\Repo\vanessa-behavior\vanessa-behavior.epf" --vanessasettings ./tools/VBparams.json --workspace . --ibconnection /Slocalhost\trade_dev --db-user "admin"
 
-1c8_UP.exe "C:\Program Files\1cv8\8.3.11.3034\bin\backbas.dll"
+1c8_uni3patch.exe "C:\Program Files\1cv8\8.3.11.3034\bin\backbas.dll"
+1c8_uni3patch.exe "C:\Program Files (x86)\1cv8\8.3.11.3034\bin\backbas.dll"
 
 deployka session lock -ras localhost:1545 -rac "C:\Program Files\1cv8\8.3.11.3034\bin\rac.exe" -db trade_dev -lockmessage "Test" -lockuccode 123 -db-user "admin" -db-pwd "123"
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
 	<ConfigVersions>
 		<Metadata name="AccumulationRegister.ДвижениеТоваров" id="9566c43b-d060-4d7e-a4e7-7f02b79134cb" configVersion="1c36db5d3b86d34f93d300f49f061df200000000">
 			<Metadata name="AccumulationRegister.ДвижениеТоваров.Dimension.Товар" id="4802b25e-6982-45d0-9995-daf15d0f4e10"/>
@@ -17,7 +17,7 @@
 		<Metadata name="CommonForm.Форма.Form" id="359f3b8b-1467-40fa-83fe-2e3d8b14ffb5.0" configVersion="8ab4ce9dabcbf043b670edfc5eb70cc700000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль1" id="01a36aa4-f20f-40bc-a70c-c3cbb7293d92" configVersion="03b802849edbbb479504796d22cbc87500000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль1.Module" id="01a36aa4-f20f-40bc-a70c-c3cbb7293d92.0" configVersion="544bc9463faf974cac046af4d879c6fc00000000"/>
-		<Metadata name="Configuration.Конфигурация" id="083dd360-5738-4bc7-9eaf-7b6326dcb852" configVersion="b5be59786d0aae46a76659b4c225399000000000"/>
+		<Metadata name="Configuration.Конфигурация" id="083dd360-5738-4bc7-9eaf-7b6326dcb852" configVersion="d43ae101b3d53a4ab0ddc5527c68dd4000000000"/>
 		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="e32c1e74-409e-4a8c-aa8b-481e1620bf9f.8" configVersion="27e17949f438364b92125bdecec60ce600000000"/>
 		<Metadata name="Document.ПоступлениеТоваров" id="50e5f79b-075c-4e2a-ae79-1874c6cac212" configVersion="806390dfa7793f4d80b8c5613a010a3700000000">
 			<Metadata name="Document.ПоступлениеТоваров.TabularSection.Товары.Attribute.Номенклатура" id="574eb912-afbc-428d-8cb7-e4179ca908aa"/>
@@ -26,5 +26,7 @@
 		</Metadata>
 		<Metadata name="Document.ПоступлениеТоваров.ObjectModule" id="50e5f79b-075c-4e2a-ae79-1874c6cac212.0" configVersion="304cdd1cbfe2054d8211f2e7733f694300000000"/>
 		<Metadata name="Language.Русский" id="941e8caa-56af-4738-a851-d9527b2e8904" configVersion="2aa4ce98105f8947a05e1cdf8779db3c00000000"/>
+		<Metadata name="Role.Администратор" id="0b74014e-fbb6-42df-b019-77d6bfa4d1ce" configVersion="c28687312bf7854a8529915ea2b1e6f800000000"/>
+		<Metadata name="Role.Администратор.Rights" id="0b74014e-fbb6-42df-b019-77d6bfa4d1ce.0" configVersion="859176431e6837488422501986e6d1b600000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

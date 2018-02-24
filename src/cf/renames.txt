@@ -12,3 +12,5 @@ Documents\ПоступлениеТоваров.xml-->Documents\Поступле�
 Documents\ПоступлениеТоваров\Ext\ObjectModule.bsl-->Documents\ПоступлениеТоваров\Ext\ObjectModule.bsl
 Ext\HomePageWorkArea.xml-->Ext\HomePageWorkArea.xml
 Languages\Русский.xml-->Languages\Русский.xml
+Roles\Администратор.xml-->Roles\Администратор.xml
+Roles\Администратор\Ext\Rights.xml-->Roles\Администратор\Ext\Rights.xml
