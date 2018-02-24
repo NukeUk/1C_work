@@ -1,0 +1,13 @@
+{
+    "ВыполнитьСценарии": true,
+    "ЗавершитьРаботуСистемы": false,
+    "ЗакрытьTestClientПослеЗапускаСценариев": true,
+    "КаталогФич": "$workspaceRoot/features/tradeTests/",
+    "КаталогиБиблиотек": [
+        "./features/Librares"
+    ],
+    "ДелатьОтчетВФорматеАллюр": true,
+    "КаталогOutputAllureБазовый": "$workspaceRoot/out/allure",
+    "ВыгружатьСтатусВыполненияСценариевВФайл": true,
+    "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "$workspaceRoot/out/buildStatus.log" 
+}
