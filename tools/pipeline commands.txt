@@ -4,4 +4,4 @@ deployka dbupdate "/FC:\Users\088\Documents\tradeTest" -allow-warnings
 
 sc create "1C:Enterprise RAS" binpath="\"C:\Program Files (x86)\1cv8\8.3.10.2699\bin\ras.exe\" cluster --service --port=1545 srvhp73:1540de"
 
-vrunner vanessa --pathvanessa C:\Repo\vanessa-behavior\vanessa-behavior.epf --vanessasettings ./tools/VBparams.json --workspace . --ibname /F"C:\Users\088\Documents\tradeTest"
+vrunner vanessa --pathvanessa "C:\Repo\vanessa-behavior\vanessa-behavior.epf" --vanessasettings ./tools/VBparams.json --workspace . --ibconnection /Slocalhost\trade_dev --db-user "admin"
