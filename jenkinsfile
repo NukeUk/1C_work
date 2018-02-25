@@ -32,6 +32,13 @@ pipeline{
             }
 
         }
+        stage('Проверка поведения'){
+            steps{
+                timestamps{
+                    cmd("vrunner vanessa --pathvanessa "C:\Repo\vanessa-behavior\vanessa-behavior.epf" --vanessasettings ./tools/VBparams.json --workspace . --ibconnection ${ConnectionString} --db-user ${env.Dbtest_usr} --db-pwd ${env.Dbtest_psw}")
+                }
+            }
+        }
     }
 }
 
