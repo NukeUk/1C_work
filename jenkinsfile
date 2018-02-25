@@ -10,7 +10,7 @@ pipeline{
     }
     environment{
         Storage = credentials('storage_trade_nikeuk')
-        dbtest = credentials('Trade_dev')
+        Dbtest = credentials('Trade_dev')
     }
     stages{
         stage('Обновление тестового контура'){
@@ -23,8 +23,8 @@ pipeline{
                         versionText = readFile encoding: 'UTF-8', file: 'src/cf/VERSION'
                         versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
                     }
-                    //cmd("deployka session lock -ras ${env.server1C} -rac \"C:/Program Files/1cv8/8.3.11.3034/bin/rac.exe\" -db ${env.database1C} ${locparams} -db-user ${env.db_test_usr} -db-pwd ${env.db_test_pwd}")
-                    cmd("deployka session lock -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.dbtest_usr} -db-pwd ${env.dbtest_pwd}")
+                    cmd("deployka session lock -ras ${env.server1C} -rac \"C:/Program Files/1cv8/8.3.11.3034/bin/rac.exe\" -db ${env.database1C} -db-user ${env.db_test_usr} -db-pwd ${env.db_test_pwd} ${locparams}")
+                    //cmd("deployka session lock -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.Dbtest_usr} -db-pwd ${env.Dbtest_pwd}")
                     cmd("deployka session kill -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.dbtest_usr} -db-pwd ${env.dbtest_pwd}")
                     cmd("deployka loadrepo ${ConnectionString} \"${env.storagePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -storage-ver ${versionValue}")
                     cmd("deployka dbupdate ${ConnectionString} -allow-warnings")
