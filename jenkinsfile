@@ -12,7 +12,7 @@ pipeline{
         Storage = credentials('storage_trade_nikeuk')
     }
     stages{
-        stage('Обновление тестового контура'){
+        stage('РћР±РЅРѕРІР»РµРЅРёРµ С‚РµСЃС‚РѕРІРѕРіРѕ РєРѕРЅС‚СѓСЂР°'){
             steps{
                 timestamps{
                     script{
@@ -20,8 +20,6 @@ pipeline{
                         versionText = readFile encoding: 'UTF-8', file: 'src/cf/VERSION'
                         versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
                     }
-                    echo "${ConnectionString}"
-                    bat "chcp 65001"
                     cmd("deployka loadrepo ${ConnectionString} \"${env.storagePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -storage-ver ${versionValue}")
                     cmd("deployka dbupdate ${ConnectionString} -allow-warnings")
                 }
@@ -36,6 +34,9 @@ def cmd(command){
         sh "${command}"
     } else
     {
-        bat "${command}"
+        bat """
+        chcp 65001
+        ${command}
+        """
    }
 }
