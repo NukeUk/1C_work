@@ -10,7 +10,7 @@ pipeline{
     }
     environment{
         Storage = credentials('storage_trade_nikeuk')
-        db_test = credentials('Trade_dev')
+        dbtest = credentials('Trade_dev')
     }
     stages{
         stage('Обновление тестового контура'){
@@ -24,11 +24,11 @@ pipeline{
                         versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
                     }
                     //cmd("deployka session lock -ras ${env.server1C} -rac \"C:/Program Files/1cv8/8.3.11.3034/bin/rac.exe\" -db ${env.database1C} ${locparams} -db-user ${env.db_test_usr} -db-pwd ${env.db_test_pwd}")
-                    cmd("deployka session lock -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.db_test_usr} -db-pwd ${env.db_test_pwd}")
-                    cmd("deployka session kill -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.db_test_usr} -db-pwd ${env.db_test_pwd}")
+                    cmd("deployka session lock -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.dbtest_usr} -db-pwd ${env.dbtest_pwd}")
+                    cmd("deployka session kill -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.dbtest_usr} -db-pwd ${env.dbtest_pwd}")
                     cmd("deployka loadrepo ${ConnectionString} \"${env.storagePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -storage-ver ${versionValue}")
                     cmd("deployka dbupdate ${ConnectionString} -allow-warnings")
-                    cmd("deployka session unlock -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.db_test_usr} -db-pwd ${env.db_test_pwd}")
+                    cmd("deployka session unlock -ras ${env.server1C} -db ${env.database1C} ${locparams} -db-user ${env.dbtest_usr} -db-pwd ${env.dbtest_pwd}")
                 }
             }
 
