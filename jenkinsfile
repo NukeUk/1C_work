@@ -53,7 +53,7 @@ def cmd(command){
     } else
     {
         bat """
-        REM chcp 65001
+        chcp 1251
         ${command}
         """
    }
