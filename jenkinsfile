@@ -13,13 +13,13 @@ pipeline{
         Dbtest = credentials('Trade_dev')
     }
     stages{
-        stage('РћР±РЅРѕРІР»РµРЅРёРµ С‚РµСЃС‚РѕРІРѕРіРѕ РєРѕРЅС‚СѓСЂР°'){
+        stage('Обновление тестового контура'){
             steps{
                 timestamps{
                     script{
                         ConnectionString = "\"/S${env.server1C}\\${env.database1C}\""
                         uccode ="\"123\""
-                        locparams = "-lockmessage \"РЎР±РѕСЂРєР°\" -lockuccode ${uccode}"
+                        locparams = "-lockmessage \"Сборка\" -lockuccode ${uccode}"
                         versionText = readFile encoding: 'UTF-8', file: 'src/cf/VERSION'
                         versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
                     }
@@ -32,7 +32,7 @@ pipeline{
             }
 
         }
-        stage('РџСЂРѕРІРµСЂРєР° РїРѕРІРµРґРµРЅРёСЏ'){
+        stage('Проверка поведения'){
             steps{
                 timestamps{
                     cmd("vrunner vanessa --pathvanessa \"C:/Repo/vanessa-behavior/vanessa-behavior.epf\" --vanessasettings ./tools/VBparams.json --workspace . --ibconnection ${ConnectionString} --db-user ${env.Dbtest_usr} --db-pwd ${env.Dbtest_psw}")
