@@ -39,6 +39,9 @@ pipeline{
                 }
             }
         }
+        stage{
+
+        }
     }
 }
 
@@ -48,7 +51,7 @@ def cmd(command){
     } else
     {
         bat """
-        chcp 65001
+        REM chcp 65001
         ${command}
         """
    }
