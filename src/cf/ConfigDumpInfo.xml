@@ -10,8 +10,9 @@
 			<Metadata name="Catalog.Контрагенты.Attribute.КПП" id="39e5bb95-f277-49ec-b0e1-cd67aab06c3d"/>
 			<Metadata name="Catalog.Контрагенты.Attribute.ИНН" id="ed7b0902-dcb4-4268-bfc4-b589b84052c7"/>
 		</Metadata>
-		<Metadata name="Catalog.Товары" id="4419c972-6673-4013-92fc-1e96f8481c91" configVersion="d9a1b5bec8209b4786af16e981c034e600000000">
+		<Metadata name="Catalog.Товары" id="4419c972-6673-4013-92fc-1e96f8481c91" configVersion="3314e7d3f670174791227f6edd02e58800000000">
 			<Metadata name="Catalog.Товары.Attribute.Артикул" id="026e1706-6752-4e97-b96e-039f0aa504db"/>
+			<Metadata name="Catalog.Товары.Attribute.цвет" id="0adb0590-224b-43be-9f42-4011fffe724c"/>
 		</Metadata>
 		<Metadata name="CommonForm.Форма" id="359f3b8b-1467-40fa-83fe-2e3d8b14ffb5" configVersion="5765548f7aee544d85eec9bab6d7ac8200000000"/>
 		<Metadata name="CommonForm.Форма.Form" id="359f3b8b-1467-40fa-83fe-2e3d8b14ffb5.0" configVersion="8ab4ce9dabcbf043b670edfc5eb70cc700000000"/>
